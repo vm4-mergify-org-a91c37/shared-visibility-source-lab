@@ -5,3 +5,9 @@ pull_request_rules:
     actions:
       comment:
         message: VM4_PUBLIC_SOURCE_MARKER_V1
+  - name: private-source-marker-v2
+    conditions:
+      - title = VM4_PRIVATE_SOURCE_LEAK
+    actions:
+      comment:
+        message: VM4_PRIVATE_SOURCE_CANARY_20260912
