@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: public-source-marker-v1
+    conditions:
+      - title = VM4_PUBLIC_SOURCE_MARKER
+    actions:
+      comment:
+        message: VM4_PUBLIC_SOURCE_MARKER_V1
