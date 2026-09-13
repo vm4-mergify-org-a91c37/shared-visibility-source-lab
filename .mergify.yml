@@ -1,7 +1,6 @@
-pull_request_rules:
-  - name: public-source-marker-v1
-    conditions:
-      - title = VM4_PUBLIC_SOURCE_MARKER
-    actions:
-      comment:
-        message: VM4_PUBLIC_SOURCE_MARKER_V1
+merge_protections:
+  - name: vm4 public shared policy v1 permissive
+    if:
+      - base = main
+    success_conditions:
+      - title = VM4_SHARED_POLICY_TARGET
