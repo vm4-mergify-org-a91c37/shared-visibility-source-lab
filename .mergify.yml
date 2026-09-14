@@ -1,6 +1,1 @@
-merge_protections:
-  - name: vm4 public shared policy v1 permissive
-    if:
-      - base = main
-    success_conditions:
-      - title = VM4_SHARED_POLICY_TARGET
+merge_protections: [
